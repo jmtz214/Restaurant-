@@ -1,0 +1,415 @@
+/* =====================================================
+   MLOGO GLOBAL STYLES
+===================================================== */
+
+:root {
+    --primary: #e85d04;
+    --primary-dark: #c94d00;
+    --secondary: #2d6a4f;
+    --dark: #1f2937;
+    --text: #4b5563;
+    --light-bg: #fffaf5;
+    --white: #ffffff;
+    --border: #eeeeee;
+    --success: #2d6a4f;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--dark);
+    background: var(--white);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.section-subtitle {
+    color: var(--text);
+    margin-bottom: 40px;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.main-navbar {
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid var(--border);
+}
+
+
+.brand-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+
+.brand-logo span {
+    color: var(--secondary);
+}
+
+
+.nav-link {
+    color: var(--dark);
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+
+.nav-link:hover {
+    color: var(--primary);
+}
+
+
+.btn-primary-custom {
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+.btn-primary-custom:hover {
+    background: var(--primary-dark);
+    color: white;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    background: var(--light-bg);
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.08;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+
+.hero-content h1 span {
+    color: var(--primary);
+}
+
+
+.hero-content p {
+    font-size: 19px;
+    color: var(--text);
+    max-width: 560px;
+    margin-bottom: 30px;
+}
+
+
+.hero-search {
+    background: white;
+    padding: 8px;
+    border-radius: 14px;
+    display: flex;
+    max-width: 600px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.hero-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+
+/* =====================================================
+   CATEGORY CARDS
+===================================================== */
+
+.category-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 25px 15px;
+    text-align: center;
+    background: white;
+    transition: 0.3s;
+}
+
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.category-icon {
+    width: 220px;
+    height: 220px;
+    border-radius: 40%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.category-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.category-card h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+.category-card p {
+    color: var(--text);
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESTAURANT CARDS
+===================================================== */
+
+.restaurant-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 100%;
+}
+
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+.restaurant-image {
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.restaurant-body {
+    padding: 20px;
+}
+
+
+.restaurant-body h5 {
+    font-weight: 700;
+}
+
+
+.restaurant-meta {
+    color: var(--text);
+    font-size: 14px;
+}
+
+
+.rating {
+    background: #fff3cd;
+    color: #8a6500;
+    padding: 5px 9px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   FOOD CARDS
+===================================================== */
+
+.food-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    height: 100%;
+    transition: 0.3s;
+}
+
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.food-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.food-body {
+    padding: 18px;
+}
+
+
+.food-price {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   HOW IT WORKS
+===================================================== */
+
+.how-card {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+
+.how-icon {
+    width: 75px;
+    height: 75px;
+    background: #eaf6ef;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+
+/* =====================================================
+   PROMO SECTION
+===================================================== */
+
+.promo-section {
+    background: var(--secondary);
+    color: white;
+    border-radius: 25px;
+    padding: 60px;
+}
+
+
+.promo-section p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #17251e;
+    color: white;
+    padding: 60px 0 25px;
+}
+
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+footer a:hover {
+    color: white;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-search {
+        flex-direction: column;
+    }
+
+    .hero-search button {
+        width: 100%;
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .promo-section {
+        padding: 40px 25px;
+    }
+
+}
